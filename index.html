@@ -2,6 +2,16 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-N2D7G9CV4D"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-N2D7G9CV4D');
+    </script>
+
     <!-- Google Tag Manager -->
     <script>
       (function (w, d, s, l, i) {
@@ -21,15 +31,8 @@
     <meta name="google-site-verification" content="_bDR9rjYmD7tREhyvapuNuz9KLDUSNJw73ASRojVpQQ" />
     <meta name="robots" content="index, follow" />
 
-    <!-- Default SEO fallback (overridden per-page by react-helmet-async) -->
-    <title>Home Interior Designers in Delhi NCR | Dfurniture</title>
-    <meta name="description" content="Dfurniture offers premium modular kitchens, custom wardrobes & full-home interior design across Delhi, Noida, Gurgaon & NCR. Book a free consultation." />
-    <meta property="og:title" content="Home Interior Designers in Delhi NCR | Dfurniture" />
-    <meta property="og:description" content="Premium modular kitchens, custom wardrobes & full-home interior design in Delhi NCR." />
-    <meta property="og:image" content="https://www.dfurniture.in/og-image.jpg" />
-    <meta property="og:url" content="https://www.dfurniture.in/" />
-    <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Per-route title/meta/canonical/OG tags injected here by server.js (react-helmet-async SSR) -->
+    <!--ssr-head-->
 
     <!-- LocalBusiness Schema -->
     <script type="application/ld+json">
@@ -75,7 +78,7 @@
       ></iframe
     ></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <div id="root"><!--ssr-outlet--></div>
+    <script type="module" src="/src/entry-client.jsx"></script>
   </body>
 </html>

@@ -1,0 +1,13 @@
+import { useEffect, useState } from "react";
+
+const ClientOnly = ({ children, fallback = null }) => {
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => {
+    setMounted(true);
+  }, []);
+
+  return mounted ? children : fallback;
+};
+
+export default ClientOnly;

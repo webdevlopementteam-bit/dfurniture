@@ -3,6 +3,7 @@ import { Autoplay, EffectFade } from "swiper/modules";
 import { Navigation, Pagination } from "swiper/modules";
 
 import CountUp from "react-countup";
+import ClientOnly from "../components/ClientOnly";
 
 import "swiper/css";
 import "swiper/css/effect-fade";
@@ -227,19 +228,8 @@ const Home = () => {
       />
       {/* slider */}
       <section>
-        <Swiper
-          modules={[Autoplay, EffectFade]}
-          effect="fade"
-          fadeEffect={{ crossFade: true }}
-          slidesPerView={1}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          speed={1000}
-        >
-          <SwiperSlide>
+        <ClientOnly
+          fallback={
             <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
               <img
                 src={slider1}
@@ -248,41 +238,65 @@ const Home = () => {
               />
               <div className="absolute inset-0 bg-black/30"></div>
             </div>
-          </SwiperSlide>
+          }
+        >
+          <Swiper
+            modules={[Autoplay, EffectFade]}
+            effect="fade"
+            fadeEffect={{ crossFade: true }}
+            slidesPerView={1}
+            loop={true}
+            autoplay={{
+              delay: 3000,
+              disableOnInteraction: false,
+            }}
+            speed={1000}
+          >
+            <SwiperSlide>
+              <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
+                <img
+                  src={slider1}
+                  alt="Best Home Interior Designing Company India"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30"></div>
+              </div>
+            </SwiperSlide>
 
-          <SwiperSlide>
-            <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
-              <img
-                src={slider2}
-                alt="Best Interior Designer Company in Gurgaon"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/30"></div>
-            </div>
-          </SwiperSlide>
+            <SwiperSlide>
+              <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
+                <img
+                  src={slider2}
+                  alt="Best Interior Designer Company in Gurgaon"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30"></div>
+              </div>
+            </SwiperSlide>
 
-          <SwiperSlide>
-            <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
-              <img
-                src={slider3}
-                alt="Home Interior Designers in Gurgaon"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/30"></div>
-            </div>
-          </SwiperSlide>
+            <SwiperSlide>
+              <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
+                <img
+                  src={slider3}
+                  alt="Home Interior Designers in Gurgaon"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30"></div>
+              </div>
+            </SwiperSlide>
 
-          <SwiperSlide>
-            <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
-              <img
-                src={slider4}
-                alt="slider4"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-black/30"></div>
-            </div>
-          </SwiperSlide>
-        </Swiper>
+            <SwiperSlide>
+              <div className="h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] relative">
+                <img
+                  src={slider4}
+                  alt="slider4"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-black/30"></div>
+              </div>
+            </SwiperSlide>
+          </Swiper>
+        </ClientOnly>
       </section>
 
       {/* stats */}
@@ -292,12 +306,18 @@ const Home = () => {
             {stats.map((item, index) => (
               <div key={index}>
                 <h2 className="text-[32px] sm:text-[40px] font-bold text-tertiary">
-                  <CountUp
-                    end={item.number}
-                    duration={3}
-                    decimals={item.number % 1 !== 0 ? 1 : 0}
-                    className="text-tertiary"
-                  />
+                  <ClientOnly
+                    fallback={
+                      <span className="text-tertiary">{item.number}</span>
+                    }
+                  >
+                    <CountUp
+                      end={item.number}
+                      duration={3}
+                      decimals={item.number % 1 !== 0 ? 1 : 0}
+                      className="text-tertiary"
+                    />
+                  </ClientOnly>
                   {item.suffix}
                 </h2>
                 <p className="text-[16px] sm:text-[19px] text-gray-700">
@@ -528,83 +548,101 @@ const Home = () => {
           </h2>
 
           {/* Swiper */}
-          <Swiper
-            modules={[Navigation, Pagination, Autoplay]}
-            slidesPerView={3}
-            slidesPerGroup={1}
-            centeredSlides={false}
-            spaceBetween={20}
-            speed={800}
-            loop={true}
-            autoplay={{
-              delay: 2000,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: true,
-            }}
-            navigation={{
-              nextEl: ".offer-next",
-              prevEl: ".offer-prev",
-            }}
-            pagination={{
-              clickable: true,
-              el: ".offer-pagination",
-            }}
-            breakpoints={{
-              0: {
-                slidesPerView: 1,
-              },
-              768: {
-                slidesPerView: 2,
-              },
-              1200: {
-                slidesPerView: 3,
-              },
-            }}
-            className="w-full offer-swiper"
-          >
-            {offerings.map((item) => (
-              <SwiperSlide key={item.id} className="h-auto">
-                <div
-                  className="bg-white flex flex-col pb-5 h-full"
-                  style={{
-                    borderRadius: "16px",
-                    overflow: "hidden",
-                  }}
-                >
-                  {/* Image */}
-                  <div className="relative w-full" style={{ height: "265px" }}>
-                    <img
-                      src={item.image}
-                      alt={item.alt}
-                      className="w-full h-full object-cover"
-                    />
+          {(() => {
+            const offerCard = (item) => (
+              <div
+                className="bg-white flex flex-col pb-5 h-full"
+                style={{
+                  borderRadius: "16px",
+                  overflow: "hidden",
+                }}
+              >
+                {/* Image */}
+                <div className="relative w-full" style={{ height: "265px" }}>
+                  <img
+                    src={item.image}
+                    alt={item.alt}
+                    className="w-full h-full object-cover"
+                  />
 
-                    {item.sale && (
-                      <span
-                        className="absolute top-3 right-3 bg-white text-gray-800 text-sm font-semibold px-4 py-1"
-                        style={{
-                          borderRadius: "6px",
-                        }}
-                      >
-                        Sale
-                      </span>
-                    )}
-                  </div>
-
-                  {/* Text */}
-                  <div className="px-6 py-5 flex flex-col gap-3 flex-1">
-                    <h3 className="text-gray-900 text-[22px] font-bold">
-                      {item.title}
-                    </h3>
-
-                    <p className="text-secondary text-[15px] tracking-wide">
-                      {item.description}
-                    </p>
-                  </div>
+                  {item.sale && (
+                    <span
+                      className="absolute top-3 right-3 bg-white text-gray-800 text-sm font-semibold px-4 py-1"
+                      style={{
+                        borderRadius: "6px",
+                      }}
+                    >
+                      Sale
+                    </span>
+                  )}
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+
+                {/* Text */}
+                <div className="px-6 py-5 flex flex-col gap-3 flex-1">
+                  <h3 className="text-gray-900 text-[22px] font-bold">
+                    {item.title}
+                  </h3>
+
+                  <p className="text-secondary text-[15px] tracking-wide">
+                    {item.description}
+                  </p>
+                </div>
+              </div>
+            );
+
+            return (
+              <ClientOnly
+                fallback={
+                  <div className="w-full grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                    {offerings.map((item) => (
+                      <div key={item.id}>{offerCard(item)}</div>
+                    ))}
+                  </div>
+                }
+              >
+                <Swiper
+                  modules={[Navigation, Pagination, Autoplay]}
+                  slidesPerView={3}
+                  slidesPerGroup={1}
+                  centeredSlides={false}
+                  spaceBetween={20}
+                  speed={800}
+                  loop={true}
+                  autoplay={{
+                    delay: 2000,
+                    disableOnInteraction: false,
+                    pauseOnMouseEnter: true,
+                  }}
+                  navigation={{
+                    nextEl: ".offer-next",
+                    prevEl: ".offer-prev",
+                  }}
+                  pagination={{
+                    clickable: true,
+                    el: ".offer-pagination",
+                  }}
+                  breakpoints={{
+                    0: {
+                      slidesPerView: 1,
+                    },
+                    768: {
+                      slidesPerView: 2,
+                    },
+                    1200: {
+                      slidesPerView: 3,
+                    },
+                  }}
+                  className="w-full offer-swiper"
+                >
+                  {offerings.map((item) => (
+                    <SwiperSlide key={item.id} className="h-auto">
+                      {offerCard(item)}
+                    </SwiperSlide>
+                  ))}
+                </Swiper>
+              </ClientOnly>
+            );
+          })()}
 
           {/* Controls */}
           <div className="flex items-center gap-5 mt-10">
@@ -715,51 +753,70 @@ const Home = () => {
         </p>
 
         <div className="w-full py-10 overflow-hidden">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={35}
-            slidesPerView={5.5}
-            loop={true}
-            loopAdditionalSlides={5}
-            speed={6000}
-            autoplay={{
-              delay: 0,
-              disableOnInteraction: false,
-              pauseOnMouseEnter: false,
-            }}
-            allowTouchMove={false}
-            breakpoints={{
-              0: {
-                slidesPerView: 1.2,
-                spaceBetween: 20,
-              },
-              640: {
-                slidesPerView: 2.2,
-                spaceBetween: 24,
-              },
-              768: {
-                slidesPerView: 3.2,
-                spaceBetween: 28,
-              },
-              1024: {
-                slidesPerView: 5.5,
-                spaceBetween: 35,
-              },
-            }}
-            className="!overflow-visible"
+          <ClientOnly
+            fallback={
+              <div className="flex flex-wrap justify-center gap-[35px]">
+                {images.map((img, index) => (
+                  <div
+                    key={index}
+                    className="overflow-hidden rounded-2xl border border-secondary w-[180px]"
+                  >
+                    <img
+                      src={img}
+                      alt="Home Interior Design Services Gurgaon"
+                      className="h-[138px] w-full object-contain"
+                    />
+                  </div>
+                ))}
+              </div>
+            }
           >
-            {[...images, ...images].map((img, index) => (
-              <SwiperSlide key={index}>
-                <div className="overflow-hidden rounded-2xl border border-secondary">
-                  <img
-                    src={img}
-                    alt="Home Interior Design Services Gurgaon"
-                    className="h-[138px] w-full object-contain"
-                  />
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            <Swiper
+              modules={[Autoplay]}
+              spaceBetween={35}
+              slidesPerView={5.5}
+              loop={true}
+              loopAdditionalSlides={5}
+              speed={6000}
+              autoplay={{
+                delay: 0,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: false,
+              }}
+              allowTouchMove={false}
+              breakpoints={{
+                0: {
+                  slidesPerView: 1.2,
+                  spaceBetween: 20,
+                },
+                640: {
+                  slidesPerView: 2.2,
+                  spaceBetween: 24,
+                },
+                768: {
+                  slidesPerView: 3.2,
+                  spaceBetween: 28,
+                },
+                1024: {
+                  slidesPerView: 5.5,
+                  spaceBetween: 35,
+                },
+              }}
+              className="!overflow-visible"
+            >
+              {[...images, ...images].map((img, index) => (
+                <SwiperSlide key={index}>
+                  <div className="overflow-hidden rounded-2xl border border-secondary">
+                    <img
+                      src={img}
+                      alt="Home Interior Design Services Gurgaon"
+                      className="h-[138px] w-full object-contain"
+                    />
+                  </div>
+                </SwiperSlide>
+              ))}
+            </Swiper>
+          </ClientOnly>
         </div>
         <p className="text-secondary">
           From concept to completion, we ensure a seamless and stress-free
@@ -819,80 +876,98 @@ const Home = () => {
 
         <section className="overflow-hidden bg-[#f4f7fa] py-10 w-full lg:w-auto">
           <div className="pl-[4%] relative">
-            <Swiper
-              modules={[Autoplay, Navigation]}
-              onBeforeInit={(swiper) => {
-                swiper.params.navigation.prevEl = ".testimonial-prev";
-                swiper.params.navigation.nextEl = ".testimonial-next";
-              }}
-              navigation={{
-                prevEl: ".testimonial-prev",
-                nextEl: ".testimonial-next",
-              }}
-              slidesPerView={3.2}
-              spaceBetween={10}
-              loop={true}
-              speed={900}
-              autoplay={{
-                delay: 2500,
-                disableOnInteraction: false,
-                pauseOnMouseEnter: false,
-              }}
-              breakpoints={{
-                0: {
-                  slidesPerView: 1.1,
-                  spaceBetween: 18,
-                },
-                640: {
-                  slidesPerView: 1.5,
-                  spaceBetween: 20,
-                },
-                768: {
-                  slidesPerView: 2.2,
-                  spaceBetween: 24,
-                },
-                1200: {
-                  slidesPerView: 3.2,
-                  spaceBetween: 28,
-                },
-              }}
-            >
-              {testimonials.map((item, index) => (
-                <SwiperSlide key={index}>
-                  <div className="relative mr-4 rounded-[34px] bg-white px-10 pb-[40px] pt-[45px] overflow-visible">
-                    <div
-                      aria-hidden="true"
-                      className="absolute right-0 bottom-0 w-[119px] h-[112px] bg-[#f4f7fa]"
-                      style={{
-                        WebkitMaskImage: `url(${shape})`,
-                        maskImage: `url(${shape})`,
-                        WebkitMaskRepeat: "no-repeat",
-                        maskRepeat: "no-repeat",
-                        WebkitMaskSize: "contain",
-                        maskSize: "contain",
-                        WebkitMaskPosition: "bottom right",
-                        maskPosition: "bottom right",
-                      }}
+            {(() => {
+              const testimonialCard = (item) => (
+                <div className="relative mr-4 rounded-[34px] bg-white px-10 pb-[40px] pt-[45px] overflow-visible">
+                  <div
+                    aria-hidden="true"
+                    className="absolute right-0 bottom-0 w-[119px] h-[112px] bg-[#f4f7fa]"
+                    style={{
+                      WebkitMaskImage: `url(${shape})`,
+                      maskImage: `url(${shape})`,
+                      WebkitMaskRepeat: "no-repeat",
+                      maskRepeat: "no-repeat",
+                      WebkitMaskSize: "contain",
+                      maskSize: "contain",
+                      WebkitMaskPosition: "bottom right",
+                      maskPosition: "bottom right",
+                    }}
+                  />
+                  <p className="font-[400] text-secondary text-left">
+                    {item.text}
+                  </p>
+
+                  <h3 className="mt-5 text-[16px] font-[600] text-[#c49a52] text-left">
+                    {item.name}
+                  </h3>
+
+                  <div className="absolute bottom-[0px] right-[2px] z-20">
+                    <img
+                      src={item.image}
+                      alt=""
+                      className="h-[60px] w-[60px] rounded-full object-cover border-[#f4f7fa]"
                     />
-                    <p className="font-[400] text-secondary text-left">
-                      {item.text}
-                    </p>
-
-                    <h3 className="mt-5 text-[16px] font-[600] text-[#c49a52] text-left">
-                      {item.name}
-                    </h3>
-
-                    <div className="absolute bottom-[0px] right-[2px] z-20">
-                      <img
-                        src={item.image}
-                        alt=""
-                        className="h-[60px] w-[60px] rounded-full object-cover border-[#f4f7fa]"
-                      />
-                    </div>
                   </div>
-                </SwiperSlide>
-              ))}
-            </Swiper>
+                </div>
+              );
+
+              return (
+                <ClientOnly
+                  fallback={
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 pr-[4%]">
+                      {testimonials.map((item, index) => (
+                        <div key={index}>{testimonialCard(item)}</div>
+                      ))}
+                    </div>
+                  }
+                >
+                  <Swiper
+                    modules={[Autoplay, Navigation]}
+                    onBeforeInit={(swiper) => {
+                      swiper.params.navigation.prevEl = ".testimonial-prev";
+                      swiper.params.navigation.nextEl = ".testimonial-next";
+                    }}
+                    navigation={{
+                      prevEl: ".testimonial-prev",
+                      nextEl: ".testimonial-next",
+                    }}
+                    slidesPerView={3.2}
+                    spaceBetween={10}
+                    loop={true}
+                    speed={900}
+                    autoplay={{
+                      delay: 2500,
+                      disableOnInteraction: false,
+                      pauseOnMouseEnter: false,
+                    }}
+                    breakpoints={{
+                      0: {
+                        slidesPerView: 1.1,
+                        spaceBetween: 18,
+                      },
+                      640: {
+                        slidesPerView: 1.5,
+                        spaceBetween: 20,
+                      },
+                      768: {
+                        slidesPerView: 2.2,
+                        spaceBetween: 24,
+                      },
+                      1200: {
+                        slidesPerView: 3.2,
+                        spaceBetween: 28,
+                      },
+                    }}
+                  >
+                    {testimonials.map((item, index) => (
+                      <SwiperSlide key={index}>
+                        {testimonialCard(item)}
+                      </SwiperSlide>
+                    ))}
+                  </Swiper>
+                </ClientOnly>
+              );
+            })()}
 
             {/* Arrows */}
             <div className="mt-10 flex items-center justify-end gap-0 pr-[5%] sm:pr-[10%] lg:pr-[20%]">

@@ -29,6 +29,14 @@ const sections = [
         name: "Premium Modular Kitchen Interiors In Delhi",
         path: "/premium-modular-kitchen-interiors-in-delhi",
       },
+      {
+        name: "Modular Kitchen Interiors In Noida",
+        path: "/modular-kitchen-interiors-in-noida",
+      },
+      {
+        name: "Modular Kitchen Manufacturers In Mumbai",
+        path: "/modular-kitchen-manufacturers-in-mumbai",
+      },
     ],
   },
 
@@ -57,6 +65,14 @@ const sections = [
   {
     title: "Interior Services",
     links: [
+      {
+        name: "Home Furniture Manufacturer In Delhi",
+        path: "/home-furniture-manufacturer-in-delhi",
+      },
+      {
+        name: "Home Furniture Manufacturer In Mumbai",
+        path: "/home-furniture-manufacturer-in-mumbai",
+      },
       {
         name: "Master Bedroom Interiors",
         path: "/architectural-master-bedroom-interiors-in-delhi",

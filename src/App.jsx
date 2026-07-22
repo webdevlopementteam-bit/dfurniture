@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./pages/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -25,10 +25,14 @@ import TopCustomWardrobeDesignerInGurgaon from "./pages/TopCustomWardrobeDesigne
 import Blog from "./pages/Blog";
 import BlogPostPage from "./pages/BlogPostPage";
 import Sitemap from "./pages/Sitemap";
+import HomeFurnitureManufacturerInDelhi from "./pages/HomeFurnitureManufacturerInDelhi";
+import HomeFurnitureManufacturerInMumbai from "./pages/HomeFurnitureManufacturerInMumbai";
+import ModularKitchenInteriorsInNoida from "./pages/ModularKitchenInteriorsInNoida";
+import ModularKitchenManufacturersInMumbai from "./pages/ModularKitchenManufacturersInMumbai";
 
 const App = () => {
   return (
-    <BrowserRouter>
+    <>
       <Header />
       <ScrollToTop />
       <Routes>
@@ -83,13 +87,29 @@ const App = () => {
           path="/pooja-room-interior-designer-in-delhi"
           element={<PoojaRoomInteriorDesignerInDelhi />}
         />
+        <Route
+          path="/home-furniture-manufacturer-in-delhi"
+          element={<HomeFurnitureManufacturerInDelhi />}
+        />
+        <Route
+          path="/home-furniture-manufacturer-in-mumbai"
+          element={<HomeFurnitureManufacturerInMumbai />}
+        />
+        <Route
+          path="/modular-kitchen-interiors-in-noida"
+          element={<ModularKitchenInteriorsInNoida />}
+        />
+        <Route
+          path="/modular-kitchen-manufacturers-in-mumbai"
+          element={<ModularKitchenManufacturersInMumbai />}
+        />
         <Route path="/sitemap" element={<Sitemap />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
 
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
       <Footer />
-    </BrowserRouter>
+    </>
   );
 };
 
