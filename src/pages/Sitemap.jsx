@@ -120,6 +120,10 @@ const sections = [
     title: "Blog Pages",
     links: [
       {
+        name: "Top Home Furniture Manufacturer In India",
+        path: "/blog/top-home-furniture-manufacturer-in-india",
+      },
+      {
         name: "Modular Kitchen Manufacturer In Delhi",
         path: "/blog/modular-kitchen-manufacturer-in-delhi",
       },

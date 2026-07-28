@@ -29,6 +29,7 @@ import HomeFurnitureManufacturerInDelhi from "./pages/HomeFurnitureManufacturerI
 import HomeFurnitureManufacturerInMumbai from "./pages/HomeFurnitureManufacturerInMumbai";
 import ModularKitchenInteriorsInNoida from "./pages/ModularKitchenInteriorsInNoida";
 import ModularKitchenManufacturersInMumbai from "./pages/ModularKitchenManufacturersInMumbai";
+import ThankYou from "./pages/Thankyou";
 
 const App = () => {
   return (
@@ -40,6 +41,7 @@ const App = () => {
         <Route path="/about-us" element={<About />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/contact-us" element={<Contact />} />
+        <Route path="/thank-you" element={<ThankYou/>}/>
         <Route path="/modular-kitchen" element={<ModularKitchen />} />
         <Route
           path="/modular-kitchen-manufacturer-in-delhi"

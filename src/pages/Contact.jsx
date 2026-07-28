@@ -1,11 +1,109 @@
-import { Link } from "react-router-dom";
+import { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 import SEO from "../components/SEO";
 import contactHero from "../assets/contact/contactHero.jpeg";
 import { FaHome } from "react-icons/fa";
 import { FaAngleRight } from "react-icons/fa6";
 import { MapPin, Mail, Phone } from "lucide-react";
 
+// Two Web3Forms access keys, each tied to a different destination inbox —
+// submitting to both delivers a copy of every enquiry to each mailbox.
+const WEB3FORMS_ACCESS_KEY =
+  import.meta.env?.VITE_WEB3FORMS_ACCESS_KEY ||
+  "5d913037-c05b-44c0-be62-4e6c90484247";
+const WEB3FORMS_ACCESS_KEY_2 =
+  import.meta.env?.VITE_WEB3FORMS_ACCESS_KEY_2 ||
+  "8367d08e-9e8b-4b3c-8131-ec3131a16e3f";
+
+const submitToWeb3Forms = async (payload, accessKey) => {
+  const response = await fetch("https://api.web3forms.com/submit", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({ ...payload, access_key: accessKey }),
+  });
+  const result = await response.json();
+  if (!result.success) {
+    throw new Error(result.message || "Submission failed");
+  }
+  return result;
+};
+
 const Contact = () => {
+  const navigate = useNavigate();
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+  const [formData, setFormData] = useState({
+    first_name: "",
+    last_name: "",
+    email: "",
+    phone: "",
+    enquiry_subject: "",
+    message: "",
+    botcheck: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData((prev) => ({
+      ...prev,
+      [name]: type === "checkbox" ? checked : value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setError("");
+
+    // Honeypot: real users never check/fill this hidden field. If it's
+    // set, silently drop the submission instead of sending it anywhere.
+    if (formData.botcheck) {
+      return;
+    }
+
+    setSubmitting(true);
+
+    const payload = {
+      // Web3Forms uses this as the actual email subject line — a
+      // fixed, predictable subject (rather than their auto-generated
+      // one) helps the notification land in the inbox instead of spam.
+      subject: "dfurniture new lead",
+      from_name: `${formData.first_name} ${formData.last_name}`,
+      first_name: formData.first_name,
+      last_name: formData.last_name,
+      email: formData.email,
+      phone: formData.phone,
+      enquiry_subject: formData.enquiry_subject,
+      message: formData.message,
+    };
+
+    try {
+      // Fire both submissions in parallel. We redirect if AT LEAST ONE
+      // succeeds, so a hiccup on one inbox doesn't block the user.
+      const results = await Promise.allSettled([
+        submitToWeb3Forms(payload, WEB3FORMS_ACCESS_KEY),
+        submitToWeb3Forms(payload, WEB3FORMS_ACCESS_KEY_2),
+      ]);
+
+      const atLeastOneSucceeded = results.some(
+        (result) => result.status === "fulfilled",
+      );
+
+      if (atLeastOneSucceeded) {
+        navigate("/thank-you");
+        return;
+      }
+
+      setSubmitting(false);
+      setError("Something went wrong. Please try again.");
+    } catch {
+      setSubmitting(false);
+      setError("Something went wrong. Please try again.");
+    }
+  };
+
   return (
     <>
       <SEO
@@ -114,14 +212,29 @@ const Contact = () => {
               Send a Message
             </h3>
 
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
+              {/* honeypot spam trap — kept visually hidden, real users never fill it in */}
+              <input
+                type="checkbox"
+                name="botcheck"
+                checked={formData.botcheck}
+                onChange={handleChange}
+                className="hidden"
+                style={{ display: "none" }}
+                tabIndex={-1}
+                autoComplete="off"
+              />
+
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
                   <label className="block font-medium mb-3">First Name</label>
 
                   <input
                     type="text"
+                    name="first_name"
                     placeholder="First Name"
+                    value={formData.first_name}
+                    onChange={handleChange}
                     className="w-full py-[11px] px-[15px] rounded-xl border border-gray-300 outline-none focus:border-primary"
                   />
                 </div>
@@ -131,7 +244,10 @@ const Contact = () => {
 
                   <input
                     type="text"
+                    name="last_name"
                     placeholder="Last Name"
+                    value={formData.last_name}
+                    onChange={handleChange}
                     className="w-full py-[11px] px-[15px] rounded-xl border border-gray-300 outline-none focus:border-primary"
                   />
                 </div>
@@ -144,7 +260,27 @@ const Contact = () => {
 
                 <input
                   type="email"
+                  name="email"
+                  required
                   placeholder="Email Address"
+                  value={formData.email}
+                  onChange={handleChange}
+                  className="w-full py-[11px] px-[15px] rounded-xl border border-gray-300 outline-none focus:border-primary"
+                />
+              </div>
+
+              <div>
+                <label className="block font-medium mb-3">
+                  Mobile Number <span className="text-red-500">*</span>
+                </label>
+
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  placeholder="Mobile Number"
+                  value={formData.phone}
+                  onChange={handleChange}
                   className="w-full py-[11px] px-[15px] rounded-xl border border-gray-300 outline-none focus:border-primary"
                 />
               </div>
@@ -154,7 +290,10 @@ const Contact = () => {
 
                 <input
                   type="text"
+                  name="enquiry_subject"
                   placeholder="Subject"
+                  value={formData.enquiry_subject}
+                  onChange={handleChange}
                   className="w-full py-[11px] px-[15px] rounded-xl border border-gray-300 outline-none focus:border-primary"
                 />
               </div>
@@ -166,16 +305,23 @@ const Contact = () => {
 
                 <textarea
                   rows={3}
+                  name="message"
+                  required
                   placeholder="Your Message"
+                  value={formData.message}
+                  onChange={handleChange}
                   className="w-full px-[15px] py-4 rounded-xl border border-gray-300 outline-none resize-none focus:border-primary"
                 />
               </div>
 
+              {error && <p className="text-red-500 text-sm">{error}</p>}
+
               <button
                 type="submit"
-                className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:opacity-90 transition"
+                disabled={submitting}
+                className="bg-primary text-white px-5 py-2 rounded-md font-semibold hover:opacity-90 transition disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Submit Form
+                {submitting ? "Sending..." : "Submit Form"}
               </button>
             </form>
           </div>

@@ -9,13 +9,36 @@ import blog2_1 from "../assets/blog/blog2_1.webp";
 import blog2_2 from "../assets/blog/blog2_2.avif";
 import blog2_3 from "../assets/blog/blog2_3.webp";
 import blog3_2 from "../assets/blog/blog3_2.avif";
+import blog7 from "../assets/blog/blog3_2.avif";
 import blog4 from "../assets/about/about-story.webp";
 import blog5_1 from "../assets/modular-kitchen/mod6.webp";
+import blog6 from "../assets/about/hero.jpg";
 import SEO from "../components/SEO";
 
 /* ─── BLOG META DATA ─────────────────────────────────────────── */
 
 const BLOGS = [
+  {
+    slug: "top-home-furniture-manufacturer-in-india",
+    category: "Blog",
+    title:
+      "Top Home Furniture Manufacturer in India | Home Interior Designing Company in India – D Furniture",
+    excerpt:
+      "D Furniture is a trusted Home Furniture Manufacturer in India offering customized furniture, modular interiors, wardrobes, kitchens, and complete home interior solutions.",
+    image: blog7,
+    author: "Dfurniture",
+    authorAvatar:
+      "https://secure.gravatar.com/avatar/74c53b21cba283f6b6213d31c97a0eea618a47d469e8a57b6c985892bb2e0c58?s=50&d=mm&r=g",
+    date: "July 28, 2026",
+    seoTitle:
+      "Top Home Furniture Manufacturer in India |Home Interior Designing Company in India - D Furniture",
+
+    seoDescription:
+      "D Furniture is a trusted Home Furniture Manufacturer in India offering customized furniture, modular interiors, wardrobes, kitchens, and complete home interior solutions.",
+
+    keywords:
+      "Top Home Furniture Manufacturer in India, Home Interior Designing Company in India",
+  },
   {
     slug: "modular-kitchen-interiors-in-delhi",
     category: "Blog",
@@ -118,6 +141,462 @@ const BLOGS = [
 ];
 
 /* ─── POST CONTENT COMPONENTS ─────────────────────────────────── */
+
+function TopFurnitureManufacturerPost() {
+  return (
+    <div className="prose-content">
+      <p>
+        Your home is more than just a place to live—it is where memories
+        are created, families grow, and comfort meets style. Every
+        homeowner dreams of having a beautiful, functional, and
+        well-designed home that reflects their personality. Achieving this
+        requires two important things: high-quality furniture and
+        professional interior design.
+      </p>
+
+      <p>
+        Choosing the right Home Interior Designing Company in India and an
+        experienced Home Furniture Manufacturer in India can completely
+        transform your living experience. From customized furniture to
+        modern interiors, the right partner helps you make the best use of
+        your available space while adding elegance and comfort.
+      </p>
+
+      <p>
+        If you are looking for premium furniture manufacturing and
+        complete interior design solutions, D Furniture offers customized
+        furniture and interior solutions for homes, apartments, villas,
+        offices, restaurants, hotels, and commercial spaces across India.
+      </p>
+
+      <img
+        src={blog6}
+        alt="Top Home Furniture Manufacturer in India"
+        className="post-img"
+      />
+
+      <p>
+        This guide explains everything you need to know about home
+        furniture manufacturing, interior designing, furniture materials,
+        customization options, and how to choose the right company for
+        your project.
+      </p>
+
+      <h4>Why Professional Home Interior Design Matters</h4>
+
+      <p>
+        Interior design is not just about decorating a house with
+        expensive furniture. It is about designing spaces that improve
+        comfort, functionality, productivity, and aesthetics.
+      </p>
+
+      <p>
+        A professional Home Interior Designing Company in India carefully
+        studies your lifestyle, budget, available space, lighting,
+        ventilation, and future needs before creating a personalized
+        design.
+      </p>
+
+      <p>Professional interior designers help homeowners by:</p>
+
+      <ul>
+        <li>Improving space utilization</li>
+        <li>Creating beautiful room layouts</li>
+        <li>Choosing matching furniture</li>
+        <li>Selecting suitable colors</li>
+        <li>Improving lighting</li>
+        <li>Designing modular storage</li>
+        <li>Increasing property value</li>
+        <li>Making homes more comfortable</li>
+      </ul>
+
+      <p>
+        Whether your home is small or large, professional planning makes a
+        significant difference.
+      </p>
+
+      <h4>D Furniture – Trusted Home Furniture Manufacturer in India</h4>
+
+      <p>
+        Furniture is the heart of every home. Poor-quality furniture loses
+        its appearance quickly and requires frequent replacement.
+      </p>
+
+      <p>
+        D Furniture focuses on manufacturing furniture that combines
+        durability, comfort, modern design, and functionality.
+      </p>
+
+      <p>
+        As a trusted Home Furniture Manufacturer in India, D Furniture
+        provides customized furniture solutions that match different
+        interior styles and customer preferences.
+      </p>
+
+      <p>The company manufactures furniture for:</p>
+
+      <ul>
+        <li>Living Rooms</li>
+        <li>Bedrooms</li>
+        <li>Dining Rooms</li>
+        <li>Modular Kitchens</li>
+        <li>Kids' Rooms</li>
+        <li>Home Offices</li>
+        <li>Study Rooms</li>
+        <li>Hotels</li>
+        <li>Restaurants</li>
+        <li>Villas</li>
+        <li>Commercial Offices</li>
+      </ul>
+
+      <p>
+        Every furniture piece is designed with attention to detail and
+        built using quality materials to ensure long-lasting performance.
+      </p>
+
+      <h4>Complete Home Interior Designing Services in India</h4>
+
+      <p>
+        D Furniture provides complete interior solutions from planning to
+        installation.
+      </p>
+
+      <p>
+        Instead of hiring multiple vendors, customers receive an
+        end-to-end solution under one roof.
+      </p>
+
+      <p>Services include:</p>
+
+      <h5>Living Room Interior Design</h5>
+
+      <p>The living room is where guests form their first impression.</p>
+
+      <p>Professional designers create:</p>
+
+      <ul>
+        <li>TV Units</li>
+        <li>Wall Panels</li>
+        <li>Designer Sofas</li>
+        <li>Coffee Tables</li>
+        <li>Display Cabinets</li>
+        <li>False Ceilings</li>
+        <li>Decorative Lighting</li>
+      </ul>
+
+      <p>Every element is selected to maximize comfort and elegance.</p>
+
+      <h5>Bedroom Interior Design</h5>
+
+      <p>A bedroom should provide relaxation and peace.</p>
+
+      <p>Design services include:</p>
+
+      <ul>
+        <li>Customized Wardrobes</li>
+        <li>King Size Beds</li>
+        <li>Storage Beds</li>
+        <li>Side Tables</li>
+        <li>Dressing Units</li>
+        <li>Wooden Flooring</li>
+        <li>Accent Walls</li>
+        <li>Mood Lighting</li>
+      </ul>
+
+      <p>
+        Storage planning is carefully designed to keep the room organized.
+      </p>
+
+      <h5>Modular Kitchen Design</h5>
+
+      <p>
+        Modern kitchens require intelligent storage and efficient layouts.
+      </p>
+
+      <p>D Furniture designs:</p>
+
+      <ul>
+        <li>L-Shaped Kitchens</li>
+        <li>U-Shaped Kitchens</li>
+        <li>Island Kitchens</li>
+        <li>Parallel Kitchens</li>
+        <li>Straight Kitchens</li>
+      </ul>
+
+      <p>Features include:</p>
+
+      <ul>
+        <li>Soft-close drawers</li>
+        <li>Tall units</li>
+        <li>Pantry storage</li>
+        <li>Corner storage</li>
+        <li>Built-in appliances</li>
+        <li>Chimney integration</li>
+        <li>Under-cabinet lighting</li>
+      </ul>
+
+      <h5>Dining Room Furniture</h5>
+
+      <p>Elegant dining furniture enhances family gatherings.</p>
+
+      <p>Products include:</p>
+
+      <ul>
+        <li>Dining Tables</li>
+        <li>Dining Chairs</li>
+        <li>Crockery Units</li>
+        <li>Bar Cabinets</li>
+        <li>Console Tables</li>
+      </ul>
+
+      <p>
+        Available in wood, engineered wood, glass, and metal combinations.
+      </p>
+
+      <h5>Home Office Interiors</h5>
+
+      <p>
+        Work-from-home has increased the demand for functional home
+        offices.
+      </p>
+
+      <p>Professional interior solutions include:</p>
+
+      <ul>
+        <li>Study Tables</li>
+        <li>Ergonomic Chairs</li>
+        <li>Storage Cabinets</li>
+        <li>Bookshelves</li>
+        <li>Computer Tables</li>
+        <li>Cable Management</li>
+        <li>Lighting Design</li>
+      </ul>
+
+      <h4>Why Customized Furniture Is Better Than Ready-Made Furniture</h4>
+
+      <p>
+        Many homeowners struggle to find furniture that perfectly fits
+        their available space.
+      </p>
+
+      <p>Customized furniture solves this problem.</p>
+
+      <p>Benefits include:</p>
+
+      <h5>Perfect Fit</h5>
+
+      <p>
+        Every furniture item is designed according to your room
+        dimensions.
+      </p>
+
+      <p>No wasted space.</p>
+
+      <h5>Personalized Design</h5>
+
+      <p>Customers can choose:</p>
+
+      <ul>
+        <li>Colors</li>
+        <li>Wood finish</li>
+        <li>Hardware</li>
+        <li>Storage options</li>
+        <li>Material</li>
+        <li>Dimensions</li>
+      </ul>
+
+      <h5>Better Space Utilization</h5>
+
+      <p>Custom furniture uses every inch efficiently.</p>
+
+      <p>Ideal for:</p>
+
+      <ul>
+        <li>Small apartments</li>
+        <li>Villas</li>
+        <li>Duplex homes</li>
+        <li>Luxury residences</li>
+      </ul>
+
+      <h5>Higher Durability</h5>
+
+      <p>
+        Professional manufacturers use better materials and hardware than
+        many mass-produced products.
+      </p>
+
+      <h5>Unique Appearance</h5>
+
+      <p>
+        Custom furniture creates a distinctive home instead of one that
+        looks like every other house.
+      </p>
+
+      <h4>Furniture Manufactured by D Furniture</h4>
+
+      <p>
+        D Furniture manufactures a wide variety of furniture for
+        residential and commercial projects.
+      </p>
+
+      <p>Popular categories include:</p>
+
+      <h5>Living Room Furniture</h5>
+
+      <ul>
+        <li>Sofas</li>
+        <li>TV Units</li>
+        <li>Coffee Tables</li>
+        <li>Side Tables</li>
+        <li>Display Cabinets</li>
+        <li>Wall Shelves</li>
+      </ul>
+
+      <h5>Bedroom Furniture</h5>
+
+      <ul>
+        <li>Beds</li>
+        <li>Wardrobes</li>
+        <li>Dressing Tables</li>
+        <li>Bedside Tables</li>
+        <li>Storage Units</li>
+      </ul>
+
+      <h5>Dining Furniture</h5>
+
+      <ul>
+        <li>Dining Tables</li>
+        <li>Dining Chairs</li>
+        <li>Crockery Cabinets</li>
+        <li>Bar Units</li>
+      </ul>
+
+      <h5>Kitchen Furniture</h5>
+
+      <ul>
+        <li>Modular Cabinets</li>
+        <li>Pantry Units</li>
+        <li>Kitchen Islands</li>
+        <li>Storage Drawers</li>
+      </ul>
+
+      <h5>Office Furniture</h5>
+
+      <ul>
+        <li>Executive Tables</li>
+        <li>Office Chairs</li>
+        <li>Reception Counters</li>
+        <li>Conference Tables</li>
+        <li>Workstations</li>
+        <li>Filing Cabinets</li>
+      </ul>
+
+      <h4>Quality Materials Used in Furniture Manufacturing</h4>
+
+      <p>Furniture quality depends on the materials used.</p>
+
+      <p>
+        D Furniture selects materials based on durability, appearance, and
+        customer requirements.
+      </p>
+
+      <p>Common materials include:</p>
+
+      <h5>Solid Wood</h5>
+
+      <p>
+        Ideal for luxury furniture because of its strength and natural
+        beauty.
+      </p>
+
+      <p>Popular options:</p>
+
+      <ul>
+        <li>Teak</li>
+        <li>Oak</li>
+        <li>Sheesham</li>
+        <li>Walnut</li>
+      </ul>
+
+      <h5>Engineered Wood</h5>
+
+      <p>Suitable for modern modular furniture.</p>
+
+      <p>Benefits:</p>
+
+      <ul>
+        <li>Affordable</li>
+        <li>Durable</li>
+        <li>Smooth finish</li>
+        <li>Easy maintenance</li>
+      </ul>
+
+      <h5>Plywood</h5>
+
+      <p>
+        Widely used in wardrobes, modular kitchens, and storage furniture
+        because of its strength and resistance to warping.
+      </p>
+
+      <h5>MDF</h5>
+
+      <p>
+        Perfect for decorative panels and painted furniture with a smooth
+        surface finish.
+      </p>
+
+      <h5>Laminates</h5>
+
+      <p>
+        Available in hundreds of textures, colors, and finishes, laminates
+        improve durability while giving furniture a stylish appearance.
+      </p>
+
+      <h5>Premium Hardware</h5>
+
+      <p>Quality hardware ensures smooth operation and long life.</p>
+
+      <p>Examples include:</p>
+
+      <ul>
+        <li>Soft-close hinges</li>
+        <li>Telescopic channels</li>
+        <li>Hydraulic lifts</li>
+        <li>Premium drawer systems</li>
+        <li>Stainless steel handles</li>
+      </ul>
+
+      <h4>Home Furniture Manufacturer in Delhi</h4>
+
+      <p>
+        Customers searching for a reliable Home Furniture Manufacturer in
+        Delhi often look for quality craftsmanship, customization, and
+        timely delivery.
+      </p>
+
+      <p>
+        D Furniture provides customized furniture solutions for
+        apartments, luxury homes, offices, restaurants, and commercial
+        projects with modern designs, quality materials, and professional
+        installation.
+      </p>
+
+      <h4>Home Furniture Manufacturer in Mumbai</h4>
+
+      <p>
+        Finding a dependable Home Furniture Manufacturer in Mumbai is
+        important because urban homes often require smart space-saving
+        furniture.
+      </p>
+
+      <p>
+        D Furniture designs modular and customized furniture suitable for
+        compact apartments, premium residences, villas, and commercial
+        spaces, focusing on functionality without compromising style.
+      </p>
+    </div>
+  );
+}
 
 function ModularKitchenPost() {
   return (
@@ -2274,6 +2753,8 @@ function ModularKitchenInteriorsPost() {
 }
 
 const BLOG_CONTENT = {
+  "top-home-furniture-manufacturer-in-india": TopFurnitureManufacturerPost,
+
   "modular-kitchen-manufacturer-in-delhi": ModularKitchenPost,
 
   "custom-wardrobe-designer-in-delhi": WardrobePost,
@@ -2287,6 +2768,7 @@ const BLOG_CONTENT = {
 /* ─── MAIN EXPORT ────────────────────────────────────────────── */
 export default function BlogPostPage() {
   const { slug } = useParams();
+  const navigate = useNavigate();
 
   const blog = BLOGS.find((b) => b.slug === slug);
 

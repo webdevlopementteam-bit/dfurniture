@@ -5,10 +5,25 @@ import blog2 from "../assets/blog/blog2.webp";
 import blog3 from "../assets/blog/blog3.webp";
 import blog4 from "../assets/about/about-story.webp";
 import blog5 from "../assets/blog/blog1_2.webp";
+import blog6 from "../assets/about/hero.jpg";
+import blog7 from "../assets/blog/blog3_2.avif";
 import blogHero from "../assets/blog/banner.jpg";
 import { FaAngleRight, FaHome } from "react-icons/fa";
 
 const BLOGS = [
+  {
+    slug: "top-home-furniture-manufacturer-in-india",
+    category: "Blog",
+    title:
+      "Top Home Furniture Manufacturer in India | Home Interior Designing Company in India – D Furniture",
+    excerpt:
+      "D Furniture is a trusted Home Furniture Manufacturer in India offering customized furniture, modular interiors, wardrobes, kitchens, and complete home interior solutions.",
+    image: blog7,
+    author: "Dfurniture",
+    authorAvatar:
+      "https://secure.gravatar.com/avatar/74c53b21cba283f6b6213d31c97a0eea618a47d469e8a57b6c985892bb2e0c58?s=50&d=mm&r=g",
+    date: "July 28, 2026",
+  },
   {
       slug: "modular-kitchen-interiors-in-delhi",
       category: "Blog",
