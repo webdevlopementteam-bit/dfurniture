@@ -5,12 +5,39 @@ import blog2 from "../assets/blog/blog2.webp";
 import blog3 from "../assets/blog/blog3.webp";
 import blog4 from "../assets/about/about-story.webp";
 import blog5 from "../assets/blog/blog1_2.webp";
-import blog6 from "../assets/about/hero.jpg";
+import blog6 from "../assets/blog/newbanner.png";
 import blog7 from "../assets/blog/blog3_2.avif";
+import blog9 from "../assets/blog/modularkitchen.png";
 import blogHero from "../assets/blog/banner.jpg";
 import { FaAngleRight, FaHome } from "react-icons/fa";
 
 const BLOGS = [
+  {
+    slug: "modular-kitchen-manufacturer-in-delhi-noida",
+    category: "Blog",
+    title:
+      "Leading Modular Kitchen Manufacturer in Delhi for Premium Modular Kitchen Interiors in Delhi & Noida",
+    excerpt:
+      "If you are searching for a Modular Kitchen Manufacturer in Delhi, choosing the right company can make all the difference. A professionally designed modular kitchen not only improves the appearance of your home but also increases storage capacity, enhances workflow, and adds long-term value to your property.",
+    image: blog9,
+    author: "Dfurniture",
+    authorAvatar:
+      "https://secure.gravatar.com/avatar/74c53b21cba283f6b6213d31c97a0eea618a47d469e8a57b6c985892bb2e0c58?s=50&d=mm&r=g",
+    date: "August 04, 2026",
+  },
+  {
+    slug: "best-home-furniture-manufacturer-in-delhi-mumbai",
+    category: "Blog",
+    title:
+      "Best Home Furniture Manufacturer in Delhi & Mumbai: Stylish Furniture for Every Home",
+    excerpt:
+      "If you're searching for a reliable Home Furniture Manufacturer in Delhi or a trusted Home Furniture Manufacturer in Mumbai, choosing an experienced company ensures superior craftsmanship, premium materials, and furniture designed to last for years.",
+    image: blog6,
+    author: "Dfurniture",
+    authorAvatar:
+      "https://secure.gravatar.com/avatar/74c53b21cba283f6b6213d31c97a0eea618a47d469e8a57b6c985892bb2e0c58?s=50&d=mm&r=g",
+    date: "August 04, 2026",
+  },
   {
     slug: "top-home-furniture-manufacturer-in-india",
     category: "Blog",

@@ -15,35 +15,35 @@ const kitchenItems = [
     alt: "mod1",
     title: "Modern Straight Kitchen",
     description:
-      "A clean, practical, and space-efficient single-wall layout suited for smaller flats and studio apartments where space is limited and a minimal design is preferred.",
+      "A clean, single-wall layout ideal for smaller flats and studio apartments where space is limited and a minimal design is preferred.",
   },
   {
     src: mod2,
     alt: "mod2",
     title: "Minimal L-Shaped Kitchen",
     description:
-      "Best suited for apartments and medium-sized homes. The L-shaped layout provides smooth movement, efficient use of corner space, and generous storage.",
+      "Best suited for apartments and mid-sized homes. Efficient use of corner space, smooth movement, and generous storage.",
   },
   {
     src: mod3,
     alt: "mod3",
     title: "Modern Parallel Kitchen",
     description:
-      "Ideal for long and narrow kitchens in compact homes. Two rows of cabinets on facing walls keep everything within easy reach and make cooking faster and more efficient.",
+      "Ideal for long, narrow kitchens in compact homes. Two facing rows of cabinets keep everything within easy reach.",
   },
   {
     src: mod4,
     alt: "mod4",
     title: "Modern U-Shaped Kitchen",
     description:
-      "Designed for larger kitchens and families who cook daily. This layout offers maximum countertop space, extensive storage, and separate zones for cooking, washing, and preparation.",
+      "Built for larger kitchens and families who cook daily — maximum countertop space, extensive storage, and dedicated zones for cooking, washing, and prep.",
   },
   {
     src: mod5,
     alt: "mod5",
-    title: "Minimal L-Shaped Kitchen",
+    title: "Island Kitchen",
     description:
-      "A versatile layout that adapts to different spaces and styles — combining minimal design with smart storage to create a kitchen that is both functional and elegant.",
+      "For open-plan and larger homes, an island layout adds extra counter space and works well for entertaining alongside daily cooking.",
   },
   {
     src: mod6,
@@ -58,43 +58,43 @@ const kitchenFaqs = [
   {
     question: "Which is the best Modular Kitchen Manufacturer in Delhi?",
     answer:
-      "Dfurniture is a trusted Modular Kitchen Manufacturer in Delhi with 15+ years of experience. We offer customized designs, quality materials, in-house manufacturing, and professional installation across Delhi NCR.",
+      "Dfurniture is a trusted modular kitchen manufacturer in Delhi with 15+ years of experience, offering customized designs, quality materials, in-house manufacturing, and professional installation across Delhi NCR.",
   },
   {
     question: "How much does a modular kitchen cost in Delhi?",
     answer:
-      "The cost depends on the kitchen size, layout, materials, and finishes. After a free site visit, we provide a detailed quotation with transparent pricing and no hidden charges.",
+      "Cost depends on kitchen size, layout, materials, and finishes. After a free site visit, we provide a detailed, itemized quotation with transparent pricing and no hidden charges.",
   },
   {
-    question: "Do you provide modular kitchen services across Delhi NCR?",
+    question: "Do you provide modular kitchen interiors across all of Delhi NCR?",
     answer:
-      "Yes. We serve Delhi, Noida, Gurgaon, Ghaziabad, Faridabad, and other NCR locations with complete modular kitchen design, manufacturing, and installation services.",
+      "Yes. We design and install modular kitchen interiors in Delhi, Noida, Gurgaon, Ghaziabad, Faridabad, and surrounding NCR areas.",
   },
   {
     question: "How long does it take to complete a modular kitchen?",
     answer:
-      "Most modular kitchen projects are completed within 4–5 weeks, including design, manufacturing, and installation. The timeline may vary based on customization.",
+      "Most projects are completed in 4–5 weeks, including design, manufacturing, and installation. Timelines can vary with the level of customization.",
   },
   {
-    question: "Which modular kitchen layout is best for small homes?",
+    question: "Which modular kitchen layout works best for small homes?",
     answer:
-      "L-Shaped, Straight, and Parallel kitchens are ideal for compact spaces. Our experts recommend the best layout after understanding your space and storage requirements.",
+      "L-shaped, straight, and parallel layouts work best for compact spaces. Our designers recommend the right layout after reviewing your space and storage needs.",
   },
   {
     question: "Which materials are best for a modular kitchen?",
     answer:
-      "BWP plywood, HDHMR boards, premium laminates, acrylic finishes, and branded hardware are popular choices because they offer strength, durability, and moisture resistance.",
+      "BWP plywood, HDHMR boards, premium laminates, acrylic finishes, and branded hardware are the most reliable choices for strength, durability, and moisture resistance in Indian conditions.",
   },
   {
     question:
-      "What is the difference between a modular kitchen and a traditional kitchen?",
+      "What's the difference between a modular kitchen and a traditional kitchen?",
     answer:
-      "A modular kitchen is made with factory-manufactured units that are easy to install, maintain, and customize. Traditional kitchens are built on-site and offer less flexibility for future changes.",
+      "A modular kitchen uses factory-manufactured units that are easier to install, maintain, and reconfigure. Traditional kitchens are built entirely on-site and offer far less flexibility for future changes.",
   },
   {
-    question: "Why should I choose Dfurniture for my modular kitchen?",
+    question: "Why choose Dfurniture for modular kitchen interiors in Delhi?",
     answer:
-      "Dfurniture offers customized kitchen solutions backed by 15+ years of experience, quality craftsmanship, premium materials, transparent pricing, and dedicated customer support from design to installation.",
+      "15+ years of experience, in-house factory manufacturing, transparent pricing, premium materials, and one accountable team from design to installation and after-sales support.",
   },
 ];
 
@@ -102,9 +102,9 @@ const ModularKitchen = () => {
   return (
     <>
       <SEO
-        title="Modular Kitchen Manufacturer in Delhi | Modular Kitchens | Dfurniture"
-        description="Looking for a trusted Modular Kitchen Manufacturer in Delhi? Dfurniture offers 100% customized modular kitchens with free site visit, 3D design, and professional installation across Delhi NCR. 15+ years of experience. Contact us today."
-        keywords="Modular Kitchen Manufacturer in Delhi, Modular Kitchens"
+        title="Modular Kitchen Manufacturer in Delhi | Dfurniture"
+        description="Dfurniture is a trusted Modular Kitchen Manufacturer in Delhi with 15+ years of experience. Get custom modular kitchen interiors in Delhi NCR. Free 3D design."
+        keywords="Modular Kitchen Manufacturer in Delhi, Modular Kitchen Interiors in Delhi"
         url="https://www.dfurniture.in/modular-kitchen/"
       />
       {/* banner */}
@@ -145,38 +145,68 @@ const ModularKitchen = () => {
       {/* design catalogue heading */}
       <section className="px-4 sm:px-10 lg:px-20 text-center">
         <h1 className="text-primary mt-3 font-extrabold text-[28px] sm:text-[36px] lg:text-[45px] leading-tight">
-          Modular Kitchen Manufacturer in Delhi | Dfurniture
+          Modular Kitchen Manufacturer in Delhi
         </h1>
-        <p className="text-black/80 mt-5">
-          Your kitchen deserves better. At <a href="/contact-us" className="text-primary"><strong>Dfurniture</strong></a>, we build
-          fully customized modular kitchens across Delhi NCR — designed for your
-          space, built in our own factory, and installed by our own team. No
-          middlemen. No compromises.
+        <p className="text-black/80 mt-5 text-left">
+          Looking for a reliable Modular Kitchen Manufacturer in Delhi? At{" "}
+          <a href="/contact-us" className="text-primary">
+            <strong>Dfurniture</strong>
+          </a>
+          , we design and build fully customized modular kitchen interiors
+          in Delhi — planned around your space, manufactured in our own
+          factory, and installed by our own trained team. No middlemen, no
+          third-party contractors, no compromises on quality.
         </p>
-        <h3 className="text-primary mt-3 font-extrabold text-[22px] sm:text-[30px] lg:text-[40px] leading-tight">
-          About Dfurniture
-        </h3>
-        <p className="text-black/80 mt-5">
-          Dfurniture is a trusted{" "}
-          <strong>Modular Kitchen Manufacturer in Delhi</strong> with over 15
-          years of experience. We have delivered customized kitchens across
-          South Delhi, West Delhi, East Delhi, North Delhi, Noida, Gurgaon, and
-          Ghaziabad.
+        <p className="text-black/80 mt-5 text-left">
+          With over 15 years in the business and 500+ kitchens delivered
+          across Delhi NCR, we understand what Indian kitchens actually
+          need — heat, moisture, daily wear, and real cooking habits — and
+          we build for that.
         </p>
-        <p className="text-black/80 mt-5">
-          Everything is made in our own factory. Every kitchen is built
-          according to your exact space, storage needs, and budget — from the
-          first design meeting to the final installation.
+        <h2 className="text-primary mt-8 font-extrabold text-[22px] sm:text-[30px] lg:text-[40px] leading-tight">
+          Dfurniture — Modular Kitchen Manufacturer in Delhi with 15+ Years
+          of Experience
+        </h2>
+        <p className="text-black/80 mt-5 text-left">
+          Dfurniture is a Delhi-based modular kitchen manufacturer serving
+          homeowners across South Delhi, West Delhi, East Delhi, North
+          Delhi, Noida, Gurgaon, Ghaziabad, and Faridabad. Every kitchen we
+          build starts with a free site visit, followed by 3D design,
+          in-house manufacturing at our own factory in Bawana, and
+          professional installation — all handled by one team, start to
+          finish.
+        </p>
+        <p className="text-black/80 mt-5 text-left">
+          Unlike manufacturers who outsource production or resell
+          factory-made modules, we make every unit ourselves. That means
+          tighter quality control, faster turnaround, and better pricing —
+          because you're not paying for a middleman's margin.
+        </p>
+        <h2 className="text-primary mt-8 font-extrabold text-[22px] sm:text-[30px] lg:text-[40px] leading-tight">
+          Modular Kitchen Interiors in Delhi — Designed Around Your Home
+        </h2>
+        <p className="text-black/80 mt-5 text-left">
+          Every home in Delhi is different — flat sizes, ventilation,
+          vastu preferences, and family cooking habits all vary. That's
+          why our modular kitchen interiors in Delhi are never templated.
+          Our designers visit your site, take exact measurements,
+          understand your storage and workflow needs, and only then start
+          on a 3D layout you can review before a single panel is cut.
+        </p>
+        <p className="text-black/80 mt-5 text-left">
+          From compact 1BHK kitchens in East Delhi to large U-shaped
+          kitchens in independent houses in South Delhi, we've built
+          interiors for practically every kind of home in the NCR.
         </p>
       </section>
-      {/* catalogue grid */}
+      {/* catalogue grid — Kitchen Layouts We Offer */}
       <section className="pt-8 pb-12 px-4 text-center sm:px-10 lg:px-20">
         <h4 className="text-primary mt-3 font-extrabold text-[22px] sm:text-[30px] lg:text-[40px] leading-tight">
           Kitchen Layouts We Offer
         </h4>
         <p className="text-black/80 mt-3">
-          Every home is different. We build kitchens in all major layouts to
-          suit every space and lifestyle.
+          Every home is different. We build kitchens in every major layout
+          to suit different space sizes and cooking styles.
         </p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 mt-7">
           {kitchenItems.map((item) => (
@@ -211,101 +241,108 @@ const ModularKitchen = () => {
       </section>
       {/* SEO sections */}
       <section className="px-4 sm:px-10 lg:px-20 pb-5">
+        <h4 className="text-primary mt-3 font-extrabold text-[24px] sm:text-[30px] leading-tight">
+          Why Choose Dfurniture as Your Modular Kitchen Manufacturer in
+          Delhi
+        </h4>
+        <ul className="mt-3 list-disc pl-5 space-y-1">
+          <li className="text-black/80">
+            <strong>Factory-Direct Manufacturing —</strong> Every kitchen
+            is made in our own factory. Better quality control, faster
+            delivery, lower cost.
+          </li>
+          <li className="text-black/80">
+            <strong>100% Customized Design —</strong> Built to your exact
+            space. See the complete 3D design before anything is
+            manufactured.
+          </li>
+          <li className="text-black/80">
+            <strong>Premium Materials —</strong> BWR/BWP moisture-resistant
+            boards, soft-close hardware, and finishes built for Indian
+            kitchen conditions.
+          </li>
+          <li className="text-black/80">
+            <strong>Transparent Pricing —</strong> One itemized quote
+            upfront. No hidden charges, no surprise costs later.
+          </li>
+          <li className="text-black/80">
+            <strong>On-Time Delivery —</strong> Most kitchens are completed
+            in 4–5 weeks from design to installation.
+          </li>
+          <li className="text-black/80">
+            <strong>Single Point of Contact —</strong> One team manages
+            design, manufacturing, and installation, so you're not
+            coordinating multiple vendors.
+          </li>
+        </ul>
+      </section>
+      <section className="px-4 sm:px-10 lg:px-20 pb-5">
         <h2 className="text-primary mt-3 font-extrabold text-[24px] sm:text-[30px] leading-tight">
           Our Expertise
         </h2>
         <ul className="mt-3 list-disc pl-5 space-y-1">
           <li className="text-black/80">
-            Free Site Visit and Kitchen Measurement
+            Free site visit and kitchen measurement
           </li>
           <li className="text-black/80">
-            Space Planning and Layout Recommendation
+            Space planning and layout recommendation
           </li>
-          <li className="text-black/80">3D Design Visualization</li>
-          <li className="text-black/80">Premium Material Selection</li>
-          <li className="text-black/80">In-House Factory Manufacturing</li>
-          <li className="text-black/80">Smart Storage Planning</li>
-          <li className="text-black/80">Professional Installation</li>
-          <li className="text-black/80">After-Sales Support</li>
+          <li className="text-black/80">3D design visualization</li>
+          <li className="text-black/80">Premium material selection</li>
+          <li className="text-black/80">In-house factory manufacturing</li>
+          <li className="text-black/80">Smart storage planning</li>
+          <li className="text-black/80">Professional installation</li>
+          <li className="text-black/80">After-sales support</li>
         </ul>
       </section>
       <section className="px-4 sm:px-10 lg:px-20 pb-5">
         <h4 className="text-primary mt-3 font-extrabold text-[24px] sm:text-[30px] leading-tight">
-          Why Choose Dfurniture?
+          15+ Years of Trust Across Delhi NCR
         </h4>
-        <p className="text-black/80 mt-1">
-          Homeowners across Delhi NCR looking for a dependable{" "}
-          <a href="/blog/modular-kitchen-manufacturer-in-delhi" className="text-primary"><strong>Modular Kitchen Manufacturer in Delhi</strong></a> choose
-          Dfurniture because we deliver quality, customization, and honest
-          service — every single time.
-        </p>
         <ul className="mt-3 list-disc pl-5 space-y-1">
+          <li className="text-black/80">15+ years of industry experience</li>
           <li className="text-black/80">
-            <strong>Factory-Direct Manufacturing -</strong> We make your kitchen
-            ourselves. Better quality, faster delivery, lower cost.
+            500+ modular kitchens delivered across Delhi NCR
           </li>
           <li className="text-black/80">
-            <strong>100% Customized Design -</strong> Designed for your exact
-            space. You see the full 3D design before we make anything.
+            100% in-house manufacturing — no outsourcing
           </li>
           <li className="text-black/80">
-            <strong>Premium Materials -</strong> BWR/BWP moisture-resistant
-            boards, soft-close hardware, and durable finishes made for Indian
-            kitchen conditions.
+            Strict quality checks at every production stage
           </li>
           <li className="text-black/80">
-            <strong>Transparent Pricing -</strong> Full itemized quote upfront.
-            No hidden charges. No surprises.
-          </li>
-          <li className="text-black/80">
-            <strong>On-Time Delivery -</strong> We commit to a deadline and we
-            deliver on it.
-          </li>
-          <li className="text-black/80">
-            <strong>Complete Service -</strong> One team from design to
-            installation. You do not need to manage multiple vendors.
-          </li>
-        </ul>
-      </section>
-      <section className="px-4 sm:px-10 lg:px-20 pb-5">
-        <h4 className="text-primary mt-3 font-extrabold text-[24px] sm:text-[30px] leading-tight">
-          15+ Years of Trust, Growth & Commitment
-        </h4>
-        <p className="text-black/80 mt-1">
-          Dfurniture has designed and delivered hundreds of modular kitchens
-          across Delhi NCR over the past 15 years — every project handled by our
-          own in-house designers, craftsmen, and installation team, with strict
-          quality checks at every stage. We have worked across every budget and
-          every space, and our growth has come entirely from one thing —
-          customers referring us to people they care about.
-        </p>
-        <ul className="mt-3 list-disc pl-5 space-y-1">
-          <li className="text-black/80">15+ Years of Industry Experience</li>
-          <li className="text-black/80">
-            500+ Modular Kitchens Delivered Across Delhi NCR
-          </li>
-          <li className="text-black/80">
-            100% In-House Manufacturing — No Outsourcing
-          </li>
-          <li className="text-black/80">
-            Strict Quality Checks at Every Production Stage
-          </li>
-          <li className="text-black/80">
-            Growth Built Entirely on Customer Trust and Referrals
+            Growth built almost entirely on customer referrals
           </li>
         </ul>
       </section>
       <ProductFAQ faqs={kitchenFaqs} />
-       <section className="px-4 sm:px-10 lg:px-20 pb-5 mb-5">
+      <section className="px-4 sm:px-10 lg:px-20 pb-5 mb-5">
         <h4 className="text-primary mt-3 font-extrabold text-[24px] sm:text-[30px] leading-tight">
           Create Your Dream Kitchen with Dfurniture
         </h4>
         <p className="text-black/80 mt-1">
-          Looking for a trusted <a href="/" className="text-primary"><strong>Modular Kitchen Manufacturer in Delhi</strong></a>? Dfurniture gives you complete kitchen solutions — smart design, quality manufacturing, professional installation, and full after-sales support — all built around your home and your lifestyle.
+          Looking for a dependable{" "}
+          <a
+            href="/blog/modular-kitchen-manufacturer-in-delhi"
+            className="text-primary"
+          >
+            <strong>Modular Kitchen Manufacturer in Delhi</strong>
+          </a>{" "}
+          for your next renovation? Dfurniture delivers complete modular
+          kitchen interiors in Delhi — smart design, in-house
+          manufacturing, professional installation, and full after-sales
+          support, built around your home and your budget.
         </p>
         <h6 className="text-primary mt-3 font-extrabold text-[18px] sm:text-[20px] leading-tight">
-          Contact us today for a free site visit and 3D design consultation.
+          Contact us today for a free site visit and 3D design
+          consultation.
         </h6>
+        <a
+          href="https://wa.me/919818855471"
+          className="inline-block mt-4 bg-category py-3 px-8 text-sm text-white rounded-full transition-all duration-300 hover:bg-[#BB9A65]"
+        >
+          Book Free Consultation
+        </a>
       </section>
     </>
   );
