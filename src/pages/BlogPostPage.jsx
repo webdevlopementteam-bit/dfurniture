@@ -188,8 +188,14 @@ function ModularKitchenDelhiNoidaPost() {
   return (
     <div className="prose-content">
       <p>
-        If you are searching for a Modular Kitchen Manufacturer in Delhi,
-        choosing the right company can make all the difference. A
+        If you are searching for a{" "}
+        <Link
+          to="/modular-kitchen"
+          className="text-amber-600 hover:text-amber-700 font-medium underline"
+        >
+          Modular Kitchen Manufacturer in Delhi
+        </Link>
+        , choosing the right company can make all the difference. A
         professionally designed modular kitchen not only improves the
         appearance of your home but also increases storage capacity,
         enhances workflow, and adds long-term value to your property.
@@ -205,11 +211,23 @@ function ModularKitchenDelhiNoidaPost() {
       </p>
 
       <p>
-        Whether you are planning Modular Kitchen Interiors in Delhi or
-        looking for premium Modular Kitchen Interiors in Noida, selecting
-        an experienced manufacturer ensures you receive high-quality
-        materials, customized designs, and professional installation
-        services.
+        Whether you are planning{" "}
+        <Link
+          to="/premium-modular-kitchen-interiors-in-delhi"
+          className="text-amber-600 hover:text-amber-700 font-medium underline"
+        >
+          Modular Kitchen Interiors in Delhi
+        </Link>{" "}
+        or looking for premium{" "}
+        <Link
+          to="/modular-kitchen-interiors-in-noida"
+          className="text-amber-600 hover:text-amber-700 font-medium underline"
+        >
+          Modular Kitchen Interiors in Noida
+        </Link>
+        , selecting an experienced manufacturer ensures you receive
+        high-quality materials, customized designs, and professional
+        installation services.
       </p>
 
       <img
@@ -219,12 +237,18 @@ function ModularKitchenDelhiNoidaPost() {
       />
 
       <p>
-        Among the trusted names in this industry, Dfurniture has earned a
-        strong reputation for delivering elegant, durable, and customized
-        modular kitchen solutions. With years of expertise in interior
-        design and furniture manufacturing, Dfurniture helps homeowners
-        transform ordinary kitchens into modern, highly functional spaces
-        that perfectly suit their lifestyle and budget.
+        Among the trusted names in this industry,{" "}
+        <Link
+          to="/"
+          className="text-amber-600 hover:text-amber-700 font-medium underline"
+        >
+          Dfurniture
+        </Link>{" "}
+        has earned a strong reputation for delivering elegant, durable,
+        and customized modular kitchen solutions. With years of expertise
+        in interior design and furniture manufacturing, Dfurniture helps
+        homeowners transform ordinary kitchens into modern, highly
+        functional spaces that perfectly suit their lifestyle and budget.
       </p>
 
       <p>
@@ -1178,12 +1202,18 @@ function DelhiMumbaiFurniturePost() {
       </p>
 
       <p>
-        Among the leading names in the industry, Dfurniture has earned a
-        reputation for delivering stylish, durable, and customized
-        furniture solutions. With years of expertise in designing and
-        manufacturing premium home furniture, Dfurniture helps homeowners
-        create beautiful living spaces that perfectly match their
-        lifestyle and budget.
+        Among the leading names in the industry,{" "}
+        <Link
+          to="/"
+          className="text-amber-600 hover:text-amber-700 font-medium underline"
+        >
+          Dfurniture
+        </Link>{" "}
+        has earned a reputation for delivering stylish, durable, and
+        customized furniture solutions. With years of expertise in
+        designing and manufacturing premium home furniture, Dfurniture
+        helps homeowners create beautiful living spaces that perfectly
+        match their lifestyle and budget.
       </p>
 
       <img

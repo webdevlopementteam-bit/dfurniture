@@ -188,10 +188,17 @@ const ModularKitchen = () => {
         <p className="text-black/80 mt-5 text-left">
           Every home in Delhi is different — flat sizes, ventilation,
           vastu preferences, and family cooking habits all vary. That's
-          why our modular kitchen interiors in Delhi are never templated.
-          Our designers visit your site, take exact measurements,
-          understand your storage and workflow needs, and only then start
-          on a 3D layout you can review before a single panel is cut.
+          why our{" "}
+          <a
+            href="/premium-modular-kitchen-interiors-in-delhi"
+            className="text-primary"
+          >
+            <strong>modular kitchen interiors in Delhi</strong>
+          </a>{" "}
+          are never templated. Our designers visit your site, take exact
+          measurements, understand your storage and workflow needs, and
+          only then start on a 3D layout you can review before a single
+          panel is cut.
         </p>
         <p className="text-black/80 mt-5 text-left">
           From compact 1BHK kitchens in East Delhi to large U-shaped
