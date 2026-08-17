@@ -108,7 +108,7 @@ const App = () => {
         <Route path="/sitemap" element={<Sitemap />} />
         <Route path="/blog/:slug" element={<BlogPostPage />} />
 
-        <Route path="*" element={<Navigate to="/" replace />} />
+     
       </Routes>
       <Footer />
     </>
