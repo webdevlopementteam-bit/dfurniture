@@ -82,7 +82,7 @@ const HomeFurnitureManufacturerInDelhi = () => {
   return (
     <>
       <SEO
-        title="Premium home furniture manufacturer in Delhi</span> | D Furniture"
+        title="Premium home furniture manufacturer in Delhi | D Furniture"
         description="Looking for a trusted home furniture manufacturer in Delhi ? D Furniture offers custom sofas, beds, wardrobes, dining tables, TV units, modular kitchens & premium home furniture."
         keywords="home furniture manufacturer in Delhi"
         url="https://www.dfurniture.in/home-furniture-manufacturer-in-delhi/"

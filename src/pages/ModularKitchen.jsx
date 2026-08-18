@@ -148,7 +148,7 @@ const ModularKitchen = () => {
           Modular Kitchen Manufacturer in Delhi
         </h1>
         <p className="text-black/80 mt-5 text-left">
-          Looking for a reliable Modular Kitchen Manufacturer in Delhi? At{" "}
+          Looking for a reliable <a href="/contact-us" className="text-primary"> Modular Kitchen Manufacturer in Delhi</a>? At{" "}
           <a href="/contact-us" className="text-primary">
             <strong>Dfurniture</strong>
           </a>
