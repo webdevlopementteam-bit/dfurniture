@@ -121,7 +121,7 @@ const sections = [
     links: [
       {
         name: "Top Modular Kitchen Interiors In Noida",
-        path: "/blog/top-modular-kitchen-interiors-in-noida",
+        path: "/blog/top-modular-kitchen-interiors-in-noida-for-modern-elegant-homes",
       },
       {
         name: "Top Home Furniture Manufacturer In Delhi",

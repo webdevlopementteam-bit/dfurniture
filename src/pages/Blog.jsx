@@ -15,7 +15,7 @@ import { FaAngleRight, FaHome } from "react-icons/fa";
 
 const BLOGS = [
   {
-    slug: "top-modular-kitchen-interiors-in-noida",
+    slug: "top-modular-kitchen-interiors-in-noida-for-modern-elegant-homes",
     category: "Blog",
     title:
       "Top Modular Kitchen Interiors in Noida for Modern & Elegant Homes | Modular Kitchen Interiors",

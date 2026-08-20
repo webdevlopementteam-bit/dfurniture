@@ -23,7 +23,7 @@ import SEO from "../components/SEO";
 
 const BLOGS = [
   {
-    slug: "top-modular-kitchen-interiors-in-noida",
+    slug: "top-modular-kitchen-interiors-in-noida-for-modern-elegant-homes",
     category: "Blog",
     title:
       "Top Modular Kitchen Interiors in Noida for Modern & Elegant Homes | Modular Kitchen Interiors",
@@ -236,7 +236,7 @@ function ModularKitchenNoidaInteriorsPost() {
         spacious, and easy to maintain. This is where{" "}
         <Link
           to="/modular-kitchen-interiors-in-noida"
-          className="text-amber-600 hover:text-amber-700 font-medium underline"
+          className="text-amber-600 hover:text-amber-700 font-bold underline"
         >
           modular kitchen interiors in Noida
         </Link>{" "}
@@ -744,7 +744,7 @@ function TopFurnitureManufacturerDelhiPost() {
         looking for customized furniture, choosing a reliable{" "}
         <Link
           to="/home-furniture-manufacturer-in-delhi"
-          className="text-amber-600 hover:text-amber-700 font-medium underline"
+          className="text-amber-600 hover:text-amber-700 font-bold underline"
         >
           home furniture manufacturer in Delhi
         </Link>{" "}
@@ -759,7 +759,7 @@ function TopFurnitureManufacturerDelhiPost() {
         traditional and fully customized solutions. Among these options,{" "}
         <Link
           to="/"
-          className="text-amber-600 hover:text-amber-700 font-medium underline"
+          className="text-amber-600 hover:text-amber-700 font-bold underline"
         >
           Dfurniture
         </Link>{" "}
@@ -5734,7 +5734,7 @@ function ModularKitchenInteriorsPost() {
 }
 
 const BLOG_CONTENT = {
-  "top-modular-kitchen-interiors-in-noida": ModularKitchenNoidaInteriorsPost,
+  "top-modular-kitchen-interiors-in-noida-for-modern-elegant-homes": ModularKitchenNoidaInteriorsPost,
 
   "top-home-furniture-manufacturer-in-delhi": TopFurnitureManufacturerDelhiPost,
 
