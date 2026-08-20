@@ -8,10 +8,38 @@ import blog5 from "../assets/blog/blog1_2.webp";
 import blog6 from "../assets/blog/newbanner.png";
 import blog7 from "../assets/blog/blog3_2.avif";
 import blog9 from "../assets/blog/modularkitchen.png";
+import blog10 from "../assets/home/livingroom.webp";
+import blog11 from "../assets/modular-kitchen/banner.webp";
 import blogHero from "../assets/blog/banner.jpg";
 import { FaAngleRight, FaHome } from "react-icons/fa";
 
 const BLOGS = [
+  {
+    slug: "top-modular-kitchen-interiors-in-noida",
+    category: "Blog",
+    title:
+      "Top Modular Kitchen Interiors in Noida for Modern & Elegant Homes | Modular Kitchen Interiors",
+    excerpt:
+      "Looking for modular kitchen interiors in Noida? Explore customized kitchen designs with smart storage, modern layouts, premium finishes, and functionality.",
+    image: blog11,
+    author: "Dfurniture",
+    authorAvatar:
+      "https://secure.gravatar.com/avatar/74c53b21cba283f6b6213d31c97a0eea618a47d469e8a57b6c985892bb2e0c58?s=50&d=mm&r=g",
+    date: "August 07, 2026",
+  },
+  {
+    slug: "top-home-furniture-manufacturer-in-delhi",
+    category: "Blog",
+    title:
+      "Top Home Furniture Manufacturer in Delhi | Explore Custom & Modern Furniture Solutions",
+    excerpt:
+      "Explore custom and modern furniture solutions from a leading home furniture manufacturer in Delhi, designed for comfort, style, durability, and functionality.",
+    image: blog10,
+    author: "Dfurniture",
+    authorAvatar:
+      "https://secure.gravatar.com/avatar/74c53b21cba283f6b6213d31c97a0eea618a47d469e8a57b6c985892bb2e0c58?s=50&d=mm&r=g",
+    date: "August 06, 2026",
+  },
   {
     slug: "modular-kitchen-manufacturer-in-delhi-noida",
     category: "Blog",
