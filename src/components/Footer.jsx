@@ -72,7 +72,7 @@ const Footer = () => {
             <ul className="mt-4">
               <li className="text-white font-semibold flex gap-2 items-center">
                 <MapPin className="p-2 bg-primary rounded-full text-white w-8 h-8 min-w-8" />
-                K, 280, DSIIDC Industrial Area, Sector 3, Bawana, Delhi, 110039
+               3/28, basement, sector 18 Rohini Delhi 110085
               </li>
               <li className="text-white font-semibold flex gap-2 items-center mt-2">
                 <FaPhoneAlt className="p-2 bg-primary rounded-full text-white w-8 h-8 min-w-8" />
@@ -84,7 +84,7 @@ const Footer = () => {
               </li>
             </ul>
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3496.976652049501!2d77.05275180947696!3d28.779955975482764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d073505588be3%3A0x39014341a48d6b66!2sDHOMZ%20FURNITURE%20LLP!5e0!3m2!1sen!2sin!4v1779523394257!5m2!1sen!2sin"
+              src="https://www.google.com/maps?q=28.7408623,77.1332361&z=17&hl=en&output=embed"
               loading="lazy"
               width="100%"
               height="150"

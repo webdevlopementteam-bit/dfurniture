@@ -172,8 +172,7 @@ const Contact = () => {
                   <h4 className="text-[30px] font-bold">Address:</h4>
 
                   <p className="leading-[1.8]">
-                    K, 280, DSIIDC Industrial Area, Sector 3, Bawana, Delhi,
-                    110039
+                    3/28, basement, sector 18 Rohini Delhi 110085
                   </p>
                 </div>
               </div>
@@ -331,7 +330,7 @@ const Contact = () => {
       {/* map */}
       <div className="pb-14 px-5 lg:px-24">
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d447613.01135712524!2d76.47854987343747!3d28.779955999999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d073505588be3%3A0x39014341a48d6b66!2sDHOMZ%20FURNITURE%20LLP!5e0!3m2!1sen!2sus!4v1779537694473!5m2!1sen!2sus"
+          src="https://www.google.com/maps?q=28.7408623,77.1332361&z=17&hl=en&output=embed"
           width="100%"
           height="600"
           loading="lazy"
