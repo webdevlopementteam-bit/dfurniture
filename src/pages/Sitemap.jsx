@@ -120,10 +120,6 @@ const sections = [
     title: "Blog Pages",
     links: [
       {
-        name: "Pooja Room Interior Design Ideas",
-        path: "/blog/pooja-room",
-      },
-      {
         name: "Top Modular Kitchen Interiors In Noida",
         path: "/blog/top-modular-kitchen-interiors-in-noida-for-modern-elegant-homes",
       },

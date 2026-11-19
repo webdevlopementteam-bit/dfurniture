@@ -11,23 +11,9 @@ import blog9 from "../assets/blog/modularkitchen.png";
 import blog10 from "../assets/home/livingroom.webp";
 import blog11 from "../assets/modular-kitchen/banner.webp";
 import blogHero from "../assets/blog/banner.jpg";
-import pooja1 from "../assets/pooja-room/pooja1.avif";
 import { FaAngleRight, FaHome } from "react-icons/fa";
 
 const BLOGS = [
-  {
-    slug: "pooja-room",
-    category: "Blog",
-    title:
-      "Pooja Room Interior Design Ideas: 6 Simple and Beautiful Ways to Create a Peaceful Prayer Space",
-    excerpt:
-      "Looking for pooja room interior design ideas? Explore 6 simple, modern and Vastu-friendly designs for small and big homes. Get expert help in Delhi NCR.",
-    image: pooja1,
-    author: "Dfurniture",
-    authorAvatar:
-      "https://secure.gravatar.com/avatar/74c53b21cba283f6b6213d31c97a0eea618a47d469e8a57b6c985892bb2e0c58?s=50&d=mm&r=g",
-    date: "November 19, 2026",
-  },
   {
     slug: "top-modular-kitchen-interiors-in-noida-for-modern-elegant-homes",
     category: "Blog",
