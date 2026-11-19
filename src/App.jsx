@@ -30,6 +30,7 @@ import HomeFurnitureManufacturerInMumbai from "./pages/HomeFurnitureManufacturer
 import ModularKitchenInteriorsInNoida from "./pages/ModularKitchenInteriorsInNoida";
 import ModularKitchenManufacturersInMumbai from "./pages/ModularKitchenManufacturersInMumbai";
 import ThankYou from "./pages/Thankyou";
+import PopupForm from "./components/PopupForm";
 
 const App = () => {
   return (
@@ -111,6 +112,7 @@ const App = () => {
      
       </Routes>
       <Footer />
+      <PopupForm />
     </>
   );
 };
